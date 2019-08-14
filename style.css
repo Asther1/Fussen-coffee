@@ -13,8 +13,8 @@
 }
 
 #logo{
-    width: 80px;
-    
+    width: 100px;
+    height: 80px;
 
 }
 
@@ -27,7 +27,6 @@
     color: white;
     text-decoration: none;
     padding: 5px 12px;
-    line-height: 65px;;
 }
 
 #link a:hover{
@@ -37,10 +36,7 @@
 }
 /* 導覽列區塊 */
 nav{
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
-    height: 65px;
-    background-color: #ffa000;
-    
+    padding: 50px 0;
 }
-nav a div

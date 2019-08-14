@@ -1,0 +1,46 @@
+*{
+    font-family: 微軟正黑體;
+    padding: 0;
+    margin: 0;
+}
+
+#fussen{
+    background-image: url(imgs/fussen.jpg);
+    background-size: 100vw;
+    width: 100vw;
+    height: 900px;
+    background-repeat: no-repeat;
+}
+
+#logo{
+    width: 80px;
+    
+
+}
+
+#link{
+    float: right;
+    padding: 30px;
+}
+
+#link a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 12px;
+    line-height: 65px;;
+}
+
+#link a:hover{
+    background-color:#ffe048 ;
+    color:black;
+    transition: 0.6s;
+}
+/* 導覽列區塊 */
+nav{
+    width: 100%;
+    margin: 0 auto;
+    height: 65px;
+    background-color: #ffa000;
+    
+}
+nav a div

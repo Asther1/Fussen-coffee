@@ -4,12 +4,26 @@
     margin: 0;
 }
 
+footer{
+    background-color: #795548;
+    /* 底部距離 0 b0 */
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    /* 行高與高度相同：垂直至中，僅限一行內容 */
+    line-height: 30px;
+    color:white;
+}
+
 #fussen{
     background-image: url(imgs/fussen.jpg);
     background-size: 100vw;
     width: 100vw;
     height: 900px;
     background-repeat: no-repeat;
+    margin: 0;
+
 }
 
 #logo{

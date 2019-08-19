@@ -4,19 +4,7 @@
     margin: 0;
 }
 
-footer{
-    background-color: #795548;
-    /* 底部距離 0 b0 */
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    /* 行高與高度相同：垂直至中，僅限一行內容 */
-    line-height: 30px;
-    color:white;
-}
-
-#fussen{
+body{
     background-image: url(imgs/fussen.jpg);
     background-size: 100vw;
     width: 100vw;
@@ -25,6 +13,7 @@ footer{
     margin: 0;
 
 }
+
 
 #logo{
     width: 100px;
@@ -54,3 +43,6 @@ nav{
     margin: 0 auto;
     padding: 50px 0;
 }
+
+/* 餐點商品區塊 */
+

@@ -14,7 +14,6 @@ body{
 
 }
 
-
 #logo{
     width: 100px;
     height: 80px;
@@ -45,4 +44,20 @@ nav{
 }
 
 /* 餐點商品區塊 */
+
+#Meal{
+    background-color: #004B3F;
+    width: 80vw;
+    margin: 0 auto;
+    border:5px #6B4B40;
+}
+
+/* 分店資訊 */
+
+#map{
+    background-color: #004B3F;
+    width: 80vw;
+    margin: 0 auto;
+    border:5px #6B4B40;
+}
 

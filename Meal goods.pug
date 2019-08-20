@@ -10,24 +10,18 @@ html(lang="en")
         title Fussen Coffee
         link(rel="stylesheet", href="style.css")
     body
-        div(id="back")
-            div(id="fussen")
-            nav
-                img(src="imgs/福森.png", alt="Fussen Coffee首頁" id="logo")
-                div(id="link")
-                    a(href="index.html") 首頁
-                    a(href="Meal goods.html") 餐點商品
-                    a(href="Branch information.html") 分店資訊
-                    a(href="contact us.html") 聯繫我們
-            section(id="Meal")
-                +Meal-box("Asther1","套餐")
-                +Meal-box("Asther2","咖啡")
-                +Meal-box("Asther3","沙拉")
-                +Meal-box("Asther4","點心")
-                +Meal-box("Asther5","三明治")
-                +Meal-box("Asther6","飲品")
-
- 
-            
-            
- 
+        div(id="fussen")
+        nav
+            img(src="imgs/福森.png", alt="Fussen Coffee首頁" id="logo")
+            div(id="link")
+                a(href="index.html") 首頁
+                a(href="Meal goods.html") 餐點商品
+                a(href="Branch information.html") 分店資訊
+                a(href="contact us.html") 聯繫我們        
+        section(id="Meal")
+            +Meal-box("Asther1","套餐")
+            +Meal-box("Asther2","咖啡")
+            +Meal-box("Asther3","沙拉")
+            +Meal-box("Asther4","點心")
+            +Meal-box("Asther5","三明治")
+            +Meal-box("Asther6","飲品")

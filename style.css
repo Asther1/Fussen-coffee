@@ -61,3 +61,18 @@ nav{
     border:5px #6B4B40;
 }
 
+#map{
+    /* 顯示 格式 */
+    display: grid;
+    /* 格線-框架-欄位 : 欄位尺寸1 欄位尺寸2 ...... */
+    grid-template-columns: auto auto ;
+    /* 格線-間隙 */
+    grid-gap: 50px;
+
+}
+
+#map img{
+    width: 450px;
+    height: 300px;
+}
+

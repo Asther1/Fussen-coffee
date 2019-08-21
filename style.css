@@ -5,27 +5,27 @@
 }
 
 body{
-    background-color: #faf7f0;
+    background-color: #e6ee9c   ;
 }
 
-#logo{
+.logo{
     width: 100px;
-    height: 70px;
+    height: 50px;
 
 }
 
-#link{
+.link{
     float: right;
-    padding: 30px;
+    padding: 20px;
 }
 
-#link a{
+.link a{
     color: white;
     text-decoration: none;
     padding: 5px 12px;
 }
 
-#link a:hover{
+.link a:hover{
     background-color:#ffe048 ;
     color:black;
     transition: 0.6s;
@@ -39,9 +39,21 @@ nav{
 
 #fussen{
     background-color:#004B3F    ;
-    height: 100px;
-    /* calc 計算 -css 計算數字 */
+    height: 70px;
     
+}
+
+/* 頁尾 */
+footer{
+    background-color: #004B3F;
+    color: #fff;
+    margin-top: 100px;
+}
+
+footer #copy{
+    padding-top: 10px;
+    font-size: 15px;
+    text-align: center;
 }
 
 /* 餐點商品區塊 */
@@ -56,41 +68,44 @@ nav{
 /* 分店資訊 */
 
 #map{
-    width: 90vw;
+    width: 80vw;
     height: 650px;
-    margin: 20px auto;
-    text-align: left;
+    margin: 15px auto;
+    text-align: center;
     /* 顯示 格式 */
     display: grid;
     /* 格線-框架-欄位 : 欄位尺寸1 欄位尺寸2 ...... */
     grid-template-columns: auto auto ;
     /* 格線-間隙 */
-    grid-gap: 50px;
+    grid-gap: 5px;
     border: 20px solid #6B4B40;
     background-color: #004B3F;
    
 }
 
-#map img{
-    width: 500px;
+.Branch-box img{
+    width: 450px;
     height: 300px;
+    text-align: center;
+    border: 2px solid black;    
 }
 
 .Branch-box{
-    margin: 10px 23.5px;
+    margin: 10px 18px;
+    border: 5px solid #6B4B40;
+    background-color: #e6ee9c;
 }
 
 .Branch-box hr{
     height: 2px;
     border: none;
-    background-color:  #fff;
+    background-color:  black;
     margin: 20px 0;
-    width: 500px;
+    width: 460px;
 }
 
 .Branch-box h1{
     font-size: 2.5em;
-    text-align: left;
-    color: #fff;
+    color: #black;
     margin-bottom: 5px;
 }

@@ -5,18 +5,12 @@
 }
 
 body{
-    background-image: url(imgs/fussen.jpg);
-    background-size: 100vw;
-    width: 100vw;
-    height: 900px;
-    background-repeat: no-repeat;
-    margin: 0;
-
+    background-color: #faf7f0;
 }
 
 #logo{
     width: 100px;
-    height: 80px;
+    height: 70px;
 
 }
 
@@ -40,7 +34,14 @@ body{
 nav{
     width: 80%;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 10px 0;
+}
+
+#fussen{
+    background-color:#004B3F    ;
+    height: 100px;
+    /* calc 計算 -css 計算數字 */
+    
 }
 
 /* 餐點商品區塊 */
@@ -55,24 +56,41 @@ nav{
 /* 分店資訊 */
 
 #map{
-    background-color: #004B3F;
-    width: 80vw;
-    margin: 0 auto;
-    border:5px #6B4B40;
-}
-
-#map{
+    width: 90vw;
+    height: 650px;
+    margin: 20px auto;
+    text-align: left;
     /* 顯示 格式 */
     display: grid;
     /* 格線-框架-欄位 : 欄位尺寸1 欄位尺寸2 ...... */
     grid-template-columns: auto auto ;
     /* 格線-間隙 */
     grid-gap: 50px;
-
+    border: 20px solid #6B4B40;
+    background-color: #004B3F;
+   
 }
 
 #map img{
-    width: 450px;
+    width: 500px;
     height: 300px;
 }
 
+.Branch-box{
+    margin: 10px 23.5px;
+}
+
+.Branch-box hr{
+    height: 2px;
+    border: none;
+    background-color:  #fff;
+    margin: 20px 0;
+    width: 500px;
+}
+
+.Branch-box h1{
+    font-size: 2.5em;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 5px;
+}

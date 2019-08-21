@@ -1,7 +1,7 @@
 mixin Meal-box(img,text)
      div(class="Meal-box")
-        a(href="#")
-            img(src="imgs/"+img+".jpg", alt="產品 照片")
+        a(href="")
+            img(src="imgs/"+img+".png", alt="產品 照片")
             p=text
             
 <!DOCTYPE html>
@@ -21,10 +21,10 @@ html(lang="en")
                     a(href="contact us.html") 聯繫我們        
         section(id="Meal")
             +Meal-box("Asther1","套餐")
-            +Meal-box("Asther2","咖啡")
-            +Meal-box("Asther3","沙拉")
+            +Meal-box("Asther2","沙拉")
+            +Meal-box("Asther3","三明治")
             +Meal-box("Asther4","點心")
-            +Meal-box("Asther5","三明治")
+            +Meal-box("Asther5","咖啡")
             +Meal-box("Asther6","飲品")
         footer
             nav

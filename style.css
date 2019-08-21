@@ -59,10 +59,46 @@ footer #copy{
 /* 餐點商品區塊 */
 
 #Meal{
-    background-color: #004B3F;
     width: 80vw;
-    margin: 0 auto;
-    border:5px #6B4B40;
+    height: 450px;
+    margin: 15px auto;
+    text-align: center;
+    /* 顯示 格式 */
+    display: grid;
+    /* 格線-框架-欄位 : 欄位尺寸1 欄位尺寸2 ...... */
+    grid-template-columns: auto auto auto;
+    /* 格線-間隙 */
+    grid-gap: 1px;
+    border: 20px solid #6B4B40;
+    background-color: #004B3F;
+}
+
+.Meal-box{
+    margin: auto auto;
+}
+
+
+.Meal-box p{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+.Meal-box a{
+    text-decoration: none;
+}
+
+.Meal-box img:hover{
+    background-color:transparent ;
+    transition: 0.6s;
+}
+
+.Meal-box img{
+    width: 70px;
+    border:2px solid #29b6f6;
+    padding: 20px;
+    border-radius: 50%;
+    background-color:rgba(117,117,117,0.4)
 }
 
 /* 分店資訊 */

@@ -89,17 +89,20 @@ footer #copy{
     text-decoration: none;
 }
 
-.Meal-box img:hover{
-    background-color:transparent ;
-    transition: 0.6s;
+.amplification{
+    width:250px;
+    overflow: hidden;
 }
 
 .Meal-box img{
-    width: 100px;
-    padding: 20px;
-    border-radius: 50%;
-    background-color:rgba(117,117,117,0.4)
+    width: 100%;
+    transition: 1s;
 }
+
+.amplification:hover img{
+    transform: scale(2);
+}
+
 
 /* 分店資訊 */
 

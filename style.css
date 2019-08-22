@@ -47,7 +47,8 @@ nav{
 footer{
     background-color: #004B3F;
     color: #fff;
-    margin-top: 100px;
+    margin-top: 30px;
+    
 }
 
 footer #copy{
@@ -61,7 +62,7 @@ footer #copy{
 #Meal{
     width: 80vw;
     height: 450px;
-    margin: 15px auto;
+    margin: 30px auto;
     text-align: center;
     /* 顯示 格式 */
     display: grid;
@@ -94,8 +95,7 @@ footer #copy{
 }
 
 .Meal-box img{
-    width: 70px;
-    border:2px solid #29b6f6;
+    width: 100px;
     padding: 20px;
     border-radius: 50%;
     background-color:rgba(117,117,117,0.4)
@@ -106,14 +106,14 @@ footer #copy{
 #map{
     width: 80vw;
     height: 650px;
-    margin: 15px auto;
+    margin: 30px auto;
     text-align: center;
     /* 顯示 格式 */
     display: grid;
     /* 格線-框架-欄位 : 欄位尺寸1 欄位尺寸2 ...... */
     grid-template-columns: auto auto ;
     /* 格線-間隙 */
-    grid-gap: 5px;
+    grid-gap: 1px;
     border: 20px solid #6B4B40;
     background-color: #004B3F;
    

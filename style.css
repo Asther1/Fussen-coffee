@@ -61,7 +61,7 @@ footer #copy{
 
 #Meal{
     width: 80vw;
-    height: 50  0px;
+    height: 500px;
     margin: 30px auto;
     text-align: center;
     /* 顯示 格式 */
@@ -90,7 +90,7 @@ footer #copy{
 }
 
 .amplification{
-    width:250px;
+    width:230px;
     overflow: hidden;
 }
 

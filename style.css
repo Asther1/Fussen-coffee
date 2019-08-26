@@ -81,7 +81,7 @@ footer #copy{
 
 .Meal-box p{
     color: #fff;
-    font-size: 1.5em;
+    font-size: 2em;
     margin-top: 15px;
 }
 
@@ -92,10 +92,11 @@ footer #copy{
 .amplification{
     width:230px;
     overflow: hidden;
+    background-color: #fff;
 }
 
 .Meal-box img{
-    width: 100%;
+    width: 90%;
     transition: 1s;
 }
 
@@ -140,7 +141,7 @@ footer #copy{
     border: none;
     background-color:  black;
     margin: 20px 0;
-    width: 460px;
+    
 }
 
 .Branch-box h1{
@@ -227,9 +228,6 @@ footer #copy{
 .Branch-box iframe{
     width: 90%;
     height: 30%;
-}
-.Branch-box hr{
-    width: 240px;
 }
 .Branch-box h2{
     float: none;

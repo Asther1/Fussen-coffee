@@ -1,21 +1,25 @@
-mixin Meal-box(img,Price,text)
+mixin Meal-box(img1,img2,Price,text)
      div(class="package-box")
-            img(src="imgs/"+img+".png", alt="產品 照片")
-            hr
-            h1=price
-            p=text
+        div
+            img(src="imgs/"+img1+".jpg", alt="產品 照片")
+        img(src="imgs/"+img2+".png", alt="貼圖 照片")
+        h1=hot-ice
+        h2=name
+        h3=money
             
 <!DOCTYPE html>
 html(lang="en")
     head
         meta(charset="zh")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no")
+        title Fussen Coffee
         title Fussen Coffee
         link(rel="stylesheet", href="style.css")
     body
         div(id="fussen")
             include nav.pug       
         section(id="package")
-            +package-box("","鐵鍋間","")
+            +package-box("","","")
 
             
         footer

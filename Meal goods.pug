@@ -1,6 +1,6 @@
-mixin Meal-box(img,text)
+mixin Meal-box(project,img,text)
      div(class="Meal-box")
-        a(href="")
+        a(href=""+project)
             div(class="amplification")
                 img(src="imgs/"+img+".jpg", alt="產品 照片")
             p=text
@@ -16,12 +16,12 @@ html(lang="en")
         div(id="fussen")
             include nav.pug        
         section(id="Meal")
-            +Meal-box("Asther1","套餐")
-            +Meal-box("Asther2","沙拉")
-            +Meal-box("Asther3","三明治")
-            +Meal-box("Asther4","點心")
-            +Meal-box("Asther5","咖啡")
-            +Meal-box("Asther6","飲品")
+            +Meal-box("project","Asther1","套餐")
+            +Meal-box("project","Asther2","沙拉")
+            +Meal-box("project","Asther3","三明治")
+            +Meal-box("project","Asther4","點心")
+            +Meal-box("coffee.html","Asther5","咖啡")
+            +Meal-box("project","Asther6","飲品")
         footer
             nav
                 img(src="imgs/福森.png", alt="Fussen Coffee首頁" class="logo")

@@ -98,11 +98,73 @@ footer #copy{
 .Meal-box img{
     width: 90%;
     transition: 1s;
+    margin-top: 5px;
 }
 
 .amplification:hover img{
     transform: scale(2);
 }
+
+/* 餐點-咖啡、茶 */
+#coffee{
+    width: 80vw;
+    height: 800px;
+    margin: 30px auto;
+    text-align: center;
+    /* 顯示 格式 */
+    display: grid;
+    /* 格線-框架-欄位 : 欄位尺寸1 欄位尺寸2 ...... */
+    grid-template-columns: auto auto auto;
+    /* 格線-間隙 */
+    grid-gap: 5px;
+    border: 20px solid #6B4B40;
+    background-color: #004B3F;
+    color: #fff;
+    font-size: 0.8em;
+}
+.coffee-box{
+margin: auto auto;
+}
+
+.coffee-1{
+    width:230px;   
+    background-color: #fff;
+
+}
+.coffee-box img{
+    width: 90%;
+    margin-top: 5px;
+}
+
+.coffee-2 img{
+    width: 40px; 
+}
+.coffee-2 img,.coffee-box h1,.coffee-box h2,.coffee-box h3{
+    display: inline-block;
+}
+.coffee-box h1{
+    margin-left: 125px;
+    font-size: 1em;
+    margin-bottom: 0px;    
+}
+
+.coffee-box h2{
+    width: 120px;
+    text-align: left;
+    color: #ffca28; 
+}
+
+.coffee-box h3{
+    margin-left: 3  0px;
+    font-size: 0.8em;
+    color: #ff77a9;   
+}
+    
+.coffee-2{
+    width: 230px;
+}
+
+
 
 
 /* 分店資訊 */
@@ -207,7 +269,12 @@ footer #copy{
     #fussen{
         height: 100px;
     }
-    /* 分店 */
+/* 餐點咖啡 */
+#coffee{
+    grid-template-columns: 1fr;
+    height: 2000px;
+    }
+/* 分店 */
     #map{
         grid-template-columns: 1fr;
         width: 80%;

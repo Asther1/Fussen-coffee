@@ -1,12 +1,11 @@
-mixin coffee-box(img,name,money)
-     div(class="coffee-box")
-        div(class="coffee-1")
+mixin dessert-box(img,name,money)
+     div(class="dessert-box")
+        div(class="dessert-1")
             img(src="imgs/"+img+".jpg", alt="產品 照片")
-        div(class="coffee-2")
-            img(src="imgs/look1.png", alt="標題圖")
-            h1 hot __ ice
-        h2=name
-        h3=money
+        div(class="dessert-2")
+            img(src="imgs/look2.png", alt="標題圖")
+        h1=name
+        h2=money
         
             
 <!DOCTYPE html>
@@ -18,16 +17,14 @@ html(lang="en")
         link(rel="stylesheet", href="style.css")
     body
         div(id="fussen")
-            include nav.pug        
-        section(id="coffee")
-            +coffee-box("coffee1","義式黑咖啡","NT.70 NT.80")
-            +coffee-box("coffee2","福森特調咖啡","NT.80 NT.90")
-            +coffee-box("coffee3","拿鐵咖啡","NT.100 NT.110")
-            +coffee-box("coffee4","卡布奇諾","NT.100 NT.110")
-            +coffee-box("coffee5","玫瑰拿鐵","NT.110 NT.120")
-            +coffee-box("coffee6","太妃糖拿鐵","NT.110 NT.120")
-            +coffee-box("coffee7","炙燒黑糖卡布","NT.110 NT.120")
-            +coffee-box("coffee8","焦糖瑪其多","NT.110 NT.120")
+            include nav.pug
+                
+        section(id="dessert")
+            +dessert-box("tea1","花生起士法式吐司","NT.70")
+            +dessert-box("tea2","香蕉巧克力法式吐司","NT.90")
+            +dessert-box("tea3","藍莓蘋果","NT.90")
+            +dessert-box("tea4","提拉米蘇吐司","NT.90")
+            +dessert-box("tea5","戀戀草莓法式吐司","NT.120")
         div(class="comeback-box")
             a(href="Meal goods.html" class="comeback") 回上頁
         footer

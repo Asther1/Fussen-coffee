@@ -106,6 +106,30 @@ footer #copy{
 }
 
 /* 餐點-咖啡、茶 */
+.comeback-box{
+    text-align: center;
+    margin: auto auto;
+    width: 80vw;
+}
+.comeback{
+    display: inline-block;
+    background-color: #6B4B40;
+    color: #ffca28;
+    text-decoration: none;
+    padding: 20px 80px;
+    transition: 0.8s; 
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.comeback:hover{
+    background-color:transparent;
+    border: 2px solid#6B4B40;
+    color:#29b6f6 ;
+}
+
 #coffee{
     width: 80vw;
     height: 800px;
@@ -157,22 +181,76 @@ margin: auto auto;
     text-align: left;
     color: #ffca28;
     font-size: 1.3em; 
+    margin-top:3px;
 }
 
 .coffee-box h3{
     float: right;
     font-size: 0.8em;
     color: #ff77a9; 
-    margin-top: 5px;  
+    margin-top:8px;  
 }
     
 .coffee-2{
     width: 230px;
 }
 
+/* 點心 */
+#dessert{
+    width: 80vw;
+    height: 600px;
+    margin: 30px auto;
+    text-align: center;
+    /* 顯示 格式 */
+    display: grid;
+    /* 格線-框架-欄位 : 欄位尺寸1 欄位尺寸2 ...... */
+    grid-template-columns: auto auto auto;
+    /* 格線-間隙 */
+    grid-gap: 1px;
+    border: 20px solid #6B4B40;
+    background-color: #004B3F;
+}
 
-
-
+.dessert-box{
+    margin: auto auto;
+    }
+    
+    .dessert-1{
+        width:230px;   
+        background-color: #fff;
+        text-align: center;
+    
+    }
+    .dessert-1 img{
+        height: 135px;
+    }
+    
+    .dessert-box img{
+        width: 90%;
+        margin-top: 5px;
+    }
+    
+    .dessert-2 img{
+        width: 220px;
+        margin: 10px auto; 
+    }
+    .dessert-box h1,.dessert-box h2{
+        display: inline-block;
+    }
+    .dessert-box h1{
+        width: 160px;
+        text-align: left;
+        margin-top: 3.5px;   
+        margin-right: 35px;
+        color: #ffca28;
+        font-size: 1em; 
+    }
+    .dessert-box h2{
+        float: right;
+        font-size: 0.8em;
+        color: #ff77a9; 
+        margin-top:6px;  
+    }
 /* 分店資訊 */
 
 #map{

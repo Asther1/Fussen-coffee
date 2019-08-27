@@ -110,7 +110,6 @@ footer #copy{
     width: 80vw;
     height: 800px;
     margin: 30px auto;
-    text-align: center;
     /* 顯示 格式 */
     display: grid;
     /* 格線-框架-欄位 : 欄位尺寸1 欄位尺寸2 ...... */
@@ -129,8 +128,13 @@ margin: auto auto;
 .coffee-1{
     width:230px;   
     background-color: #fff;
+    text-align: center;
 
 }
+.coffee-1 img{
+    height: 135px;
+}
+
 .coffee-box img{
     width: 90%;
     margin-top: 5px;
@@ -143,21 +147,23 @@ margin: auto auto;
     display: inline-block;
 }
 .coffee-box h1{
-    margin-left: 125px;
+    float: right;
     font-size: 1em;
-    margin-bottom: 0px;    
+    margin-top: 25px;    
 }
 
 .coffee-box h2{
     width: 120px;
     text-align: left;
-    color: #ffca28; 
+    color: #ffca28;
+    font-size: 1.3em; 
 }
 
 .coffee-box h3{
-    margin-left: 3  0px;
+    float: right;
     font-size: 0.8em;
-    color: #ff77a9;   
+    color: #ff77a9; 
+    margin-top: 5px;  
 }
     
 .coffee-2{

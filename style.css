@@ -4,9 +4,6 @@
     margin: 0;
 }
 
-body{
-    background-color: #e6ee9c   ;
-}
 
 .logo{
     width: 350px;
@@ -38,14 +35,14 @@ nav{
 }
 
 #fussen{
-    background-color:#004B3F    ;
+    background-color:#000    ;
     height: 70px;
     
 }
 
 /* 頁尾 */
 footer{
-    background-color: #004B3F;
+    background-color: #afafaf;
     color: #fff;
     margin-top: 30px;
     
@@ -70,8 +67,7 @@ footer #copy{
     grid-template-columns: auto auto auto;
     /* 格線-間隙 */
     grid-gap: 1px;
-    border: 20px solid #6B4B40;
-    background-color: #004B3F;
+    
 }
 
 .Meal-box{
@@ -80,7 +76,7 @@ footer #copy{
 
 
 .Meal-box p{
-    color: #fff;
+    color: #afafaf;
     font-size: 2em;
     margin-top: 15px;
 }
@@ -92,7 +88,7 @@ footer #copy{
 .amplification{
     width:230px;
     overflow: hidden;
-    background-color: #fff;
+    background-color: ;
 }
 
 .Meal-box img{
@@ -113,8 +109,8 @@ footer #copy{
 }
 .comeback{
     display: inline-block;
-    background-color: #6B4B40;
-    color: #ffca28;
+    background-color: black;
+    color: #fff;
     text-decoration: none;
     padding: 20px 80px;
     transition: 0.8s; 
@@ -126,8 +122,8 @@ footer #copy{
 
 .comeback:hover{
     background-color:transparent;
-    border: 2px solid#6B4B40;
-    color:#29b6f6 ;
+    border: 2px solid#afafaf;
+    color:#afafaf ;
 }
 
 #coffee{
@@ -140,9 +136,8 @@ footer #copy{
     grid-template-columns: auto auto auto;
     /* 格線-間隙 */
     grid-gap: 5px;
-    border: 20px solid #6B4B40;
-    background-color: #004B3F;
-    color: #fff;
+    background-color:;
+    color: black;
     font-size: 0.8em;
 }
 .coffee-box{
@@ -151,7 +146,8 @@ margin: auto auto;
 
 .coffee-1{
     width:230px;   
-    background-color: #fff;
+    border:2px solid #afafaf;
+    
     text-align: center;
 
 }
@@ -160,7 +156,7 @@ margin: auto auto;
 }
 
 .coffee-box img{
-    width: 90%;
+    width: 95%;
     margin-top: 5px;
 }
 
@@ -207,8 +203,6 @@ margin: auto auto;
     grid-template-columns: auto auto auto;
     /* 格線-間隙 */
     grid-gap: 1px;
-    border: 20px solid #6B4B40;
-    background-color: #004B3F;
 }
 
 .dessert-box{
@@ -217,7 +211,7 @@ margin: auto auto;
     
     .dessert-1{
         width:230px;   
-        background-color: #fff;
+        border: 2px solid #afafaf;
         text-align: center;
     
     }
@@ -251,6 +245,20 @@ margin: auto auto;
         color: #ff77a9; 
         margin-top:6px;  
     }
+
+/* 套餐 */
+#package{
+    width: 80vw;
+    height: 600px;
+    margin: 30px auto;
+    text-align: center;
+    /* 顯示 格式 */
+    display: grid;
+    /* 格線-框架-欄位 : 欄位尺寸1 欄位尺寸2 ...... */
+    grid-template-columns: auto auto auto;
+    /* 格線-間隙 */
+    grid-gap: 1px;   
+}
 /* 分店資訊 */
 
 #map{

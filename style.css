@@ -320,8 +320,7 @@ margin: auto auto;
     grid-template-columns: auto auto ;
     /* 格線-間隙 */
     grid-gap: 1px;
-    border: 20px solid #6B4B40;
-    background-color: #004B3F;
+
    
 }
 
@@ -365,6 +364,43 @@ margin: auto auto;
     width:450px;
     border:2px solid black;
 }
+
+/* 聯絡我們 */
+form{
+    width:30vw;
+    margin: 30px auto;
+    padding: 80px 80px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  input,textarea{
+    outline-style: none;
+  }
+
+  input[type="text"], input[type="email"],textarea{
+    background-color: #afafaf;
+    border: 2px  solid white;
+     box-sizing: border-box;
+     width: 100%;
+     padding: 10px; 
+     margin-bottom: 20px;
+    
+   }
+
+   input[type="reset"], input[type="Submit"]
+{ 
+ height: 50px;
+  width: 150px;
+  margin-left:20px;
+  margin-right:20px;
+  background-color: #000;
+  color: white;
+}
+
+   #button{
+    margin-top:10px;
+   text-align:center;
+ }
 
   /* RWD */
 

@@ -1,15 +1,19 @@
-mixin package-box(img,name,name2,money,paragraph)
+mixin package-box(img,name,name2,money,paragraph,name3,money1,paragraph1,name4,money2,paragraph2)
      div(class="package-box")
         div(class="package-1")
             img(src="imgs/"+img+".jpg", alt="產品 照片")
         div(class="package-2")
             img(src="imgs/look4.png", alt="標題圖")
             h1=name
-mixin package-outside(name2,money,paragraph)
-    div(class="package-outside")
         h2=name2
         h3=money
-        p=paragraph        
+        p=paragraph
+        h2=name3
+        h3=money1
+        p=paragraph1
+        h2=name4
+        h3=money2
+        p=paragraph2    
             
 <!DOCTYPE html>
 html(lang="en")
@@ -23,13 +27,12 @@ html(lang="en")
             include nav.pug
                 
         section(id="package")
-            +package-box("dessert1","鐵鍋煎餅系列")
-                +package-outside("炸脆雞腿","NT.189","炸雞腿、鐵鍋煎餅")
-            +package-box("dessert1","全日經典早午餐")
-            +package-box("dessert1","午餐時間")
-            +package-box("dessert1","准霸手工牛肉堡")
-            +package-box("dessert1","熱壓尼尼三明治")
-            +package-box("dessert1","法式吐司麵包塔")
+            +package-box("dessert1","鐵鍋煎餅","炸脆雞","NT.189","炸雞腿、自製煎餅","烤脆雞","NT.220","現烤雞、自製煎餅、甜鮮蔬菜","炸脆雞","NT.220","自製燒肉、甜鮮蔬菜、生菜、自製煎餅")
+            +package-box("dessert1","全日經典早午餐","維尼早午餐","NT.260","蜂蜜奶油煎餅、炒蛋、薯塊、鮮甜生菜、特製烤雞腿","小豬與長棍","NT.260","自製豬排、洋蔥杏鮑菇、薯塊、清爽胡麻醬沙拉、內蘇外軟青醬長棍麵包","法式香頌早午餐","NT.260","法式吐司、帶骨香腸、培根、炒蛋、水果生菜沙拉")
+            +package-box("dessert1","午餐時間","蔬菜牛肉","NT.280","現炒牛肉、香料飯、甜青椒、番茄、主廚濃湯","烤雞腿炒菇拌飯","NT.280","現炒牛肉、香料飯、甜青椒、番茄、主廚濃湯","焗烤義式肉醬飯","NT.280","義士燉肉醬、馬茲列拉起士、青花椰菜")
+            +package-box("dessert1","准霸手工漢堡","花生起士牛肉堡","NT.260","自製手工牛肉、招牌香濃花生起士醬、番茄生菜","夏威夷培根牛肉堡","NT.260","自製手工牛肉加上起士、培根、鳳梨、生菜、酸黃瓜、新鮮番茄","墨西哥辣味牛肉堡","NT.260","SOS手工牛肉、墨西哥辣椒、生菜、洋蔥、酸黃瓜、番茄")
+            +package-box("dessert1","熱壓尼尼三明治","奶油煙燻鮭魚","NT.240","煙燻鮭魚、義式乳酪起司、酸黃瓜、洋蔥、Mozzarella","甜椒牛肉帕尼尼","NT.240","沙朗牛肉、洋菇、洋蔥、番茄、墨西哥辣椒、切達、Mozzarella","炒菇菇帕尼尼","NT.230","杏鮑菇、香菇、番茄、清甜蔬菜、洋蔥、切達、起士、Mozzarella")
+            +package-box("dessert1","法式吐司麵包塔","甜蔥鮪魚法式麵包塔","NT.199","法式吐司、鮪魚、起士、蜂蜜芥末醬、洋蔥","煙燻牛肉法式麵包塔","NT.210","法式吐司、起士、蜂蜜芥末醬、黑胡椒牛肉")
                   
             
         div(class="comeback-box")

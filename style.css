@@ -40,6 +40,10 @@ nav{
     
 }
 
+body{
+    background-color: #faf7f0;
+}
+
 /* 頁尾 */
 footer{
     background-color: #afafaf;
@@ -76,7 +80,7 @@ footer #copy{
 
 
 .Meal-box p{
-    color: #afafaf;
+  
     font-size: 2em;
     margin-top: 15px;
 }
@@ -207,6 +211,7 @@ margin: auto auto;
 
 .dessert-box{
     margin: auto auto;
+
     }
     
     .dessert-1{
@@ -249,7 +254,7 @@ margin: auto auto;
 /* 套餐 */
 #package{
     width: 80vw;
-    height: 600px;
+    height: 1000px;
     margin: 30px auto;
     /* 顯示 格式 */
     display: grid;
@@ -260,7 +265,8 @@ margin: auto auto;
 }
 
 .package-box{
-    margin: auto auto;
+    margin: 0 auto;
+    width: 250px;
     }
     
     .package-1{
@@ -283,7 +289,8 @@ margin: auto auto;
 }
 
 .package-box h2{
-    color: #ffca28
+    color: #ffca28;
+    font-size: 1.2em;
 }
 
 .package-box p{
@@ -414,7 +421,17 @@ form{
     #Meal{
         grid-template-columns: 1fr 1fr;
     }
-  
+    #package{
+        grid-template-columns: 1fr 1fr;
+        height: 1500px;
+
+        }
+    #dessert{
+        grid-template-columns: 1fr 1fr;
+    }
+  #coffee{
+      grid-template-columns: 1fr 1fr;
+      height: 1000px;
 }
 
 /* 當螢幕寬度小於等於 767 像素 - 手機 */
@@ -450,6 +467,16 @@ form{
     grid-template-columns: 1fr;
     height: 2000px;
     }
+/* 套餐 */
+ #package{
+    grid-template-columns: 1fr;
+    height: 3000px;
+    }
+/* 點心 */
+#dessert{
+    grid-template-columns: 1fr  ;
+    height: 1200px;
+}
 /* 分店 */
     #map{
         grid-template-columns: 1fr;

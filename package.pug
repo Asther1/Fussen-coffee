@@ -1,0 +1,39 @@
+mixin package-box(img,name,name2,money,paragraph)
+     div(class="package-box")
+        div(class="package-1")
+            img(src="imgs/"+img+".jpg", alt="產品 照片")
+        div(class="package-2")
+            img(src="imgs/look4.png", alt="標題圖")
+            h1=name
+mixin package-outside(name2,money,paragraph)
+    div(class="package-outside")
+        h2=name2
+        h3=money
+        p=paragraph        
+            
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="zh")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no")
+        title Fussen Coffee
+        link(rel="stylesheet", href="style.css")
+    body
+        div(id="fussen")
+            include nav.pug
+                
+        section(id="package")
+            +package-box("dessert1","鐵鍋煎餅系列")
+                +package-outside("炸脆雞腿","NT.189","炸雞腿、鐵鍋煎餅")
+            +package-box("dessert1","全日經典早午餐")
+            +package-box("dessert1","午餐時間")
+            +package-box("dessert1","准霸手工牛肉堡")
+            +package-box("dessert1","熱壓尼尼三明治")
+            +package-box("dessert1","法式吐司麵包塔")
+                  
+            
+        div(class="comeback-box")
+            a(href="Meal goods.html" class="comeback") 回上頁
+        footer
+            nav
+                img(src="imgs/福森.png", alt="Fussen Coffee首頁" class="logo")

@@ -251,7 +251,6 @@ margin: auto auto;
     width: 80vw;
     height: 600px;
     margin: 30px auto;
-    text-align: center;
     /* 顯示 格式 */
     display: grid;
     /* 格線-框架-欄位 : 欄位尺寸1 欄位尺寸2 ...... */
@@ -259,6 +258,55 @@ margin: auto auto;
     /* 格線-間隙 */
     grid-gap: 1px;   
 }
+
+.package-box{
+    margin: auto auto;
+    }
+    
+    .package-1{
+        width:250px;
+        height: 150px;   
+        border: 2px solid #afafaf;
+        text-align: center;
+    }
+    .package-1 img{
+        width: 90%;
+        margin: 6px auto;
+    }
+
+.package-2 h1,.package-2 img{
+    display: inline-block;
+}
+
+.package-box h2,.package-box h3{
+    display: inline-block;
+}
+
+.package-box h2{
+    color: #ffca28
+}
+
+.package-box p{
+    color: #afafaf;
+    font-size: 0.8em;
+    margin-top: 10px
+}
+
+.package-box h3{
+    float:right;
+    color: #ff77a9
+}
+.package-2 h1{
+    float: right;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #29b6f6
+}
+.package-2 img{
+    width: 60px;
+    margin-top: 10px;
+}
+
 /* 分店資訊 */
 
 #map{

@@ -264,7 +264,7 @@ margin: auto auto;
     /* 格線-框架-欄位 : 欄位尺寸1 欄位尺寸2 ...... */
     grid-template-columns: auto auto auto;
     /* 格線-間隙 */
-    grid-gap: 1px;   
+    grid-gap: 10px;   
 }
 
 .package-box{
@@ -423,8 +423,18 @@ form{
 
 /* 當螢幕寬度小於等於 1023 像素 - 平板 */
 @media screen and (max-width: 1023px) {
+    /* 導覽業區塊 */
+    .logo{
+        width: 220px;
+        height: 40px;
+        margin-top: 10px;
+    
+    }
+
+    /* 商品頁面 */
     #Meal{
         grid-template-columns: 1fr 1fr;
+        height: 100%;
     }
     #package{
         grid-template-columns: 1fr 1fr;
@@ -446,7 +456,7 @@ form{
         grid-template-columns: 1fr;
         width: 80%;
         padding:0px; 
-        height: 1400px;
+        height: 100%;
     }
     
     nav{
@@ -475,7 +485,7 @@ form{
 /* 套餐 */
  #package{
     grid-template-columns: 1fr;
-    height: 3000px;
+    height: 100%;
     }
 /* 點心 */
 #dessert{
@@ -511,4 +521,13 @@ form{
 .Branch-box h1{
     float: none;
 }
+input[type="reset"], input[type="Submit"]{
+    margin: 0;
+   
+}
+
+form{
+    width: 50%;
+}
+
 }

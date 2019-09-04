@@ -44,6 +44,31 @@ body{
     background-color: #faf7f0;
 }
 
+.rapid{
+    width: 80vw;
+    text-align: center;
+}
+
+.rapidforbox{
+    margin: 20px 220px;
+    text-align: left;
+    border-bottom: 1px solid #000;
+
+}
+.rapid-box{
+  font-size: 12px;
+  margin: 0 0 0;
+  padding: 6px 15px;
+  border:1px solid #afafaf;
+  position:absolute;
+  right: 0;
+}
+
+.rapid-box a{
+    color: #afafaf;
+    text-decoration: none;
+}
+
 /* 頁尾 */
 footer{
     background-color: #afafaf;
@@ -61,6 +86,7 @@ footer #copy{
 /* 餐點商品區塊 */
 
 #Meal{
+    color: #29b6f6;
     width: 80vw;
     height: 500px;
     margin: 30px auto;
@@ -232,9 +258,9 @@ margin: auto auto;
         margin-top: 5px;
     }
     
-    .dessert-2 img{
-        width: 220px;
-        margin: 10px auto; 
+    .dessert-2 {
+        width: 60px;
+        margin: 10px auto;
     }
     .dessert-box h1,.dessert-box h2{
         display: inline-block;
@@ -320,67 +346,42 @@ margin: auto auto;
 }
 
 /* 分店資訊 */
-
-#map{
-    width: 80vw;
-    height: 650px;
-    margin: 30px auto;
+.Branch-box{
     text-align: center;
-    /* 顯示 格式 */
-    display: grid;
-    /* 格線-框架-欄位 : 欄位尺寸1 欄位尺寸2 ...... */
-    grid-template-columns: auto auto ;
-    /* 格線-間隙 */
-    grid-gap: 1px;
+    margin: 60px auto;
+    width: 80vw;
+}
 
-   
+.Branch-box iframe{
+    margin: 60px o;
+    width:60vw;
+    height: 30vw;
 }
 
 .Branch-box img{
-    width: 450px;
-    height: 300px;
-    text-align: center;
-    border: 2px solid black;    
+    width: 300px;
+}
+.shopbox{
+    margin: 30px 0;
+    font-size: 40px;
+}
+.shop-box{
+    display: inline-block;
+    margin: 30px 20px;
+    text-align: left;
+    width: 300px;
+    padding: 20px 20px;
 }
 
-.Branch-box{
-    margin: 10px 18px;
-    border: 5px solid #6B4B40;
-    background-color: #29b6f6;
-}
-
-.Branch-box hr{
-    height: 2px;
-    border: none;
-    background-color:  black;
-    margin: 20px 0;
-    
-}
-
-.Branch-box h1{
-    font-size: 2.5em;
-    color: #black;
-    margin-bottom: 5px;
-    float: left;
-}
-
-.Branch-box h2{
-    float: right;
-    margin-top: 40px;
-    font-size: 1em;
-    color: rgba(0,0,0,0.3);
-    margin-right: 20px;
-}
-.Branch-box iframe{
-    height:200px;
-    width:450px;
-    border:2px solid black;
+.shop-box h2{
+    text-align: right;
+    font-size: 15px;
 }
 
 /* 聯絡我們 */
 form{
     width:30vw;
-    margin: 30px auto;
+    margin: 60px auto;
     padding: 80px 80px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
@@ -451,6 +452,16 @@ form{
 
 /* 當螢幕寬度小於等於 767 像素 - 手機 */
 @media screen and (max-width: 767px){
+    /* 導覽 */
+    .rapidforbox{
+        text-align: center;
+         width: 100%;
+         margin: 20px 40px;
+    }
+
+    .rapid-box{
+        width: 80vw;s
+    }
     /* 商品 */
     #Meal{
         grid-template-columns: 1fr;
@@ -493,34 +504,16 @@ form{
     height: 1200px;
 }
 /* 分店 */
-    #map{
-        grid-template-columns: 1fr;
-        width: 80%;
-        height: 900px;
+.shop-box{
+    padding: 0px;
+    margin: 20px 0;
 }
 
-.Branch-box{
-    width: 80%;
-    height:400px;
-    margin-top: 20px;
-    text-align: center;
+.shopbox{
+    font-size: 30px;
 }
 
-.Branch-box img{
-    width: 90%;
-    height: 30%;
-}
-.Branch-box iframe{
-    width: 90%;
-    height: 30%;
-}
-.Branch-box h2{
-    float: none;
-    margin: 0
-}
-.Branch-box h1{
-    float: none;
-}
+ /* 聯絡我們 */
 input[type="reset"], input[type="Submit"]{
     margin: 0;
    

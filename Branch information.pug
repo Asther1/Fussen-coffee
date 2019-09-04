@@ -1,9 +1,15 @@
-mixin Branch-box(shop,phone,img,news)
+mixin Branch-box(shop,img,position,positioncontent,phone,phonecontent,time,timecontent,news)
      div(class="Branch-box")
-        h1=shop
-        h2=phone
-        img(src="imgs/"+img+".jpg", alt="產品 照片")
-        hr
+        div(class="shopbox")
+            h1=shop
+        img(src="imgs/"+img+".jpg", alt="店面 照片")
+        div(class="shop-box")
+            h1=position
+            h2=positioncontent
+            h1=phone
+            h2=phonecontent
+            h1=time
+            h2=timecontent
         iframe(src="" + news,alt="地圖連接")
 
 <!DOCTYPE html>
@@ -17,8 +23,8 @@ html(lang="en")
         div(id="fussen")
             include nav.pug
         section(id="map")
-            +Branch-box("中壢店","TeL:03-4555868","圖片2","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.9989532923782!2d121.22154811369654!3d24.96615024716487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682231be4c33c9%3A0x3b9d942958cd5590!2z56aP5qOu5ZKW5ZWhLeS4reWjoua1t-iPr-W6lw!5e0!3m2!1szh-TW!2stw!4v1564551234994!5m2!1szh-TW!2stw")
-            +Branch-box("大溪店","TeL:03-3889927","圖片1","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.426392307605!2d121.28444681369439!3d24.88343335046757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681826ec033627%3A0x468883fe183087d3!2z56aP5qOu5ZKW5ZWhIC3lpKfmuqrlupcgRnVzc2VuQ2FmZSc!5e0!3m2!1szh-TW!2stw!4v1564552248761!5m2!1szh-TW!2stw")
+            +Branch-box("@ 中壢店 @","圖片2","地址:","桃園市中壢區環北路313號","電話:","TeL:03-4555868","營業時間:","AM : 8 : 00 ~ PM : 4 : 00","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.9989532923782!2d121.22154811369654!3d24.96615024716487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682231be4c33c9%3A0x3b9d942958cd5590!2z56aP5qOu5ZKW5ZWhLeS4reWjoua1t-iPr-W6lw!5e0!3m2!1szh-TW!2stw!4v1564551234994!5m2!1szh-TW!2stw")
+            +Branch-box("@ 大溪店 @","圖片2","地址:","桃園市大溪區登龍路18號","電話:","TeL:03-3889927","營業時間:","永久停業","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.4265348975327!2d121.28444681464146!3d24.883428484043076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681826ec033627%3A0x468883fe183087d3!2z56aP5qOu5ZKW5ZWhIC3lpKfmuqrlupcgRnVzc2VuQ2FmZSc!5e0!3m2!1szh-TW!2stw!4v1567571443159!5m2!1szh-TW!2stw")
         footer
             nav
                 img(src="imgs/福森.png", alt="Fussen Coffee首頁" class="logo")

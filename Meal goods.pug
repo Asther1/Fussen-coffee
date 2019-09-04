@@ -14,7 +14,13 @@ html(lang="en")
         link(rel="stylesheet", href="style.css")
     body
         div(id="fussen")
-            include nav.pug        
+            include nav.pug
+        section(class="rapid")
+            div(class="rapidforbox")
+                h1 餐點商品
+                div(class="rapid-box") 
+                    a(href="index.html") 首頁 
+                    a(href="Meal goods.html") / 餐點商品    
         section(id="Meal")
             +Meal-box("package.html","Asther1","套餐")
             +Meal-box("island.html","Asther2","沙拉")

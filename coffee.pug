@@ -18,7 +18,14 @@ html(lang="en")
         link(rel="stylesheet", href="style.css")
     body
         div(id="fussen")
-            include nav.pug        
+            include nav.pug
+        section(class="rapid")
+            div(class="rapidforbox")
+                    h1 咖啡專區
+                    div(class="rapid-box") 
+                        a(href="index.html") 首頁 
+                        a(href="Meal goods.html") / 餐點商品
+                        a(href="coffee.html") / 咖啡        
         section(id="coffee")
             +coffee-box("coffee1","義式黑咖啡","NT.70 NT.80")
             +coffee-box("coffee2","福森特調咖啡","NT.80 NT.90")

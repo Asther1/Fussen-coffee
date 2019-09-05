@@ -42,32 +42,34 @@ nav{
 
 body{
     background-color: #faf7f0;
-}
+}       
 
-.rapid{
-    width: 80vw;
-    text-align: center;
-}
+    .rapid{
+        margin: 0 250px;
+    }
+    .rapidforbox{
+        font-size: 24px;
+        color: #000;
+        padding-top: 17px;
+    padding-bottom: 17px;
+        border-bottom: 1.5px solid #afafaf;
+        margin-top: 30px;
 
-.rapidforbox{
-    margin: 20px 220px;
-    text-align: left;
-    border-bottom: 1px solid #000;
+    }
+    .rapid-box{
+    font-size: 12px;
+    margin: 0 0 0;
+    padding: 6px 15px;
+    border:1px solid #afafaf;
+    position: relative;
+    float: right;
+    background-color: #faf7f0;
+    }
 
-}
-.rapid-box{
-  font-size: 12px;
-  margin: 0 0 0;
-  padding: 6px 15px;
-  border:1px solid #afafaf;
-  position:absolute;
-  right: 0;
-}
-
-.rapid-box a{
-    color: #afafaf;
-    text-decoration: none;
-}
+    .rapid-box a{
+        color: #afafaf;
+        text-decoration: none;
+    }
 
 /* 頁尾 */
 footer{
@@ -284,18 +286,19 @@ margin: auto auto;
 #package{
     width: 80vw;
     height: 1000px;
-    margin: 30px auto;
+    margin: 50px auto;
     /* 顯示 格式 */
     display: grid;
     /* 格線-框架-欄位 : 欄位尺寸1 欄位尺寸2 ...... */
     grid-template-columns: auto auto auto;
     /* 格線-間隙 */
-    grid-gap: 10px;   
+    grid-gap: 1px;   
 }
 
 .package-box{
-    margin: 0 auto;
+    margin: 20px auto;
     width: 250px;
+    border-bottom: 1px solid #000;
     }
     
     .package-1{
@@ -307,6 +310,7 @@ margin: auto auto;
     }
     .package-1 img{
         width: 90%;
+        height: 140px;
         margin: 6px auto;
         border-radius: 20px;
     }

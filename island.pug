@@ -1,8 +1,8 @@
-mixin dessert-box(img,name,money)
-     div(class="dessert-box")
-        div(class="dessert-1")
+mixin island-box(img,name,money)
+     div(class="island-box")
+        div(class="island-1")
             img(src="imgs/"+img+".jpg", alt="產品 照片")
-        div(class="dessert-2")
+        div(class="island-2")
             img(src="imgs/look2.png", alt="標題圖")
         h1=name
         h2=money
@@ -26,10 +26,10 @@ html(lang="en")
                     a(href="Meal goods.html") / 餐點商品
                     a(href="island.html") / 沙拉
                 
-        section(id="dessert")
-            +dessert-box("island1","法式培根凱薩沙拉","NT.70")
-            +dessert-box("island2","季節水果沙拉","NT.90")
-            +dessert-box("island3","煙燻鮭魚乳酪沙拉","NT.90")
+        section(id="island")
+            +island-box("island1","法式培根凱薩沙拉","NT.70")
+            +island-box("island2","季節水果沙拉","NT.90")
+            +island-box("island3","煙燻鮭魚乳酪沙拉","NT.90")
         div(class="comeback-box")
             a(href="Meal goods.html" class="comeback") 回上頁
         footer

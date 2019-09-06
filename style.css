@@ -173,9 +173,11 @@ footer #copy{
     background-color:;
     color: black;
     font-size: 0.8em;
+    
 }
 .coffee-box{
-margin: auto auto;
+margin: 20px auto;
+border-bottom: 1px solid #afafaf;
 }
 
 .coffee-1{
@@ -225,6 +227,62 @@ margin: auto auto;
     width: 230px;
 }
 
+/* 沙拉 */
+#island{
+    width: 80vw;
+    margin: 30px auto;
+    text-align: center;
+    /* 顯示 格式 */
+    display: grid;
+    /* 格線-框架-欄位 : 欄位尺寸1 欄位尺寸2 ...... */
+    grid-template-columns: auto auto auto;
+    /* 格線-間隙 */
+    grid-gap: 1px;
+}
+
+.island-box{
+    margin: 20px auto;
+    border-bottom: 1px solid #afafaf;
+
+    }
+    
+    .island-1{
+        width:230px;   
+        text-align: center;
+        background-color: #afafaf;
+        border-radius: 20px;
+    }
+    .island-1 img{
+        height: 130px;
+        border-radius: 20px;
+    }
+    
+    .island-2 img{
+        width: 50px;
+        margin-top: 5px;
+    }
+    
+    .island-2 {
+        width: 60px;
+        margin: 10px auto;
+    }
+    .island-box h1,.dessert-box h2{
+        display: inline-block;
+    }
+    .island-box h1{
+        width: 160px;
+        text-align: left;
+        margin-top: 3.5px;   
+        margin-right: 35px;
+        color: #ffca28;
+        font-size: 1em; 
+    }
+    .island-box h2{
+        float: right;
+        font-size: 0.8em;
+        color: #ff77a9; 
+        margin-top:6px;  
+    }
 /* 點心 */
 #dessert{
     width: 80vw;
@@ -240,7 +298,8 @@ margin: auto auto;
 }
 
 .dessert-box{
-    margin: auto auto;
+    margin: 20px auto;
+    border-bottom: 1px solid #afafaf;
 
     }
     
@@ -436,6 +495,7 @@ form{
     
     }
 
+
     /* 商品頁面 */
     #Meal{
         grid-template-columns: 1fr 1fr;
@@ -443,15 +503,16 @@ form{
     }
     #package{
         grid-template-columns: 1fr 1fr;
-        height: 1500px;
+        height: 100%;
 
         }
     #dessert{
         grid-template-columns: 1fr 1fr;
+        height: 100%;
     }
   #coffee{
       grid-template-columns: 1fr 1fr;
-      height: 1000px;
+      height: 100%;
 }
 
 /* 當螢幕寬度小於等於 767 像素 - 手機 */
@@ -464,7 +525,7 @@ form{
     }
 
     .rapid-box{
-        width: 80vw;s
+        width: 80vw;
     }
     /* 商品 */
     #Meal{
@@ -495,7 +556,7 @@ form{
 /* 餐點咖啡 */
 #coffee{
     grid-template-columns: 1fr;
-    height: 2000px;
+    height: 100%;
     }
 /* 套餐 */
  #package{
@@ -505,7 +566,7 @@ form{
 /* 點心 */
 #dessert{
     grid-template-columns: 1fr  ;
-    height: 1200px;
+    height: 100%;
 }
 /* 分店 */
 .shop-box{

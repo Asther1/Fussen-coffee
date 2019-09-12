@@ -102,9 +102,6 @@ footer #copy{
     
 }
 
-.Meal-box{
-    margin: auto auto;
-}
 
 
 .Meal-box p{
@@ -115,6 +112,7 @@ footer #copy{
 
 .Meal-box a{
     text-decoration: none;
+    display: inline-block;
 }
 
 .amplification{
@@ -253,7 +251,7 @@ border-bottom: 1px solid #afafaf;
         border-radius: 20px;
     }
     .island-1 img{
-        height: 130px;
+        width: 200px;
         border-radius: 20px;
     }
     
@@ -514,18 +512,22 @@ form{
       grid-template-columns: 1fr 1fr;
       height: 100%;
 }
-
+    #island{      
+        grid-template-columns: 1fr 1fr;
+        height: 100%;}
 /* 當螢幕寬度小於等於 767 像素 - 手機 */
 @media screen and (max-width: 767px){
     /* 導覽 */
     .rapidforbox{
         text-align: center;
          width: 100%;
-         margin: 20px 40px;
     }
-
+    .rapid {
+        margin: 0 0;
+    }
     .rapid-box{
-        width: 80vw;
+        font-size: 0px;
+        border: none;
     }
     /* 商品 */
     #Meal{
